@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>The Haberdashery Registration</title>
+  </head>
+  <body>
+    <h1 id="title">The Haberdashery</h1>
+    <h3 id="sub-title">Registration Form</h3>
+    <p id="description">Fill out the form to become part of the Crazy-88!</p>
+    <form id="survey-form" action="https://www.linkedin.com/in/j-sergio-khoshdel-1367ab21a/">
+    <fieldset>
+      <legend>Account Information</legend>
+      <label id="first-name-label" for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" placeholder="First Name" required /></label>
+      <label id="last-name-label" for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name" placeholder="Last Name" required /></label>
+      <label id="name-label" for="name">Enter Your Username: <input id="name" type="text" name="name" placeholder="Username" required /></label>                   
+      <label id="email-label" for="email">Enter Your E-mail: <input id="email" type="email" name="email" placeholder="E-mail" required /></label>
+      <label id="number-label" for="number">Enter Your Age: <input id="number" type="number" min="18" max="110" name="age" placeholder="Age" required /></label>
+      <label id="gender-label" for="dropdown">Select Your Gender:
+        <select id="dropdown" id="gender" value="gender" name="gender">
+          <option value="">(Select One)</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+          <option value="4">Prefer Not To Disclose</option>
+        </select>
+      </label>
+      <label id="telephone-label" for="telephone">Enter Your Phone Number: <input id="telephone" name="telephone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" required /></lable>
+    </fieldset>
+    <fieldset>
+      <legend>About Me</legend>
+      <label id="label-bio" for="bio">Provide a Short Bio: 
+        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Make a Good First Impression..."></textarea>
+      </label>
+      <label for="profile-pricture">Upload a Profile Picture: <input id="profile-picture" name="profile-picture" type="file" />
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Choose a Subscription Package</legend>
+      <label for="free-trial"><input class="inline" id="free-trial" value="free-trial" name="subscription-type" type="radio" checked/>Free Trial*</label>
+      <label for="six-months"><input class="inline" class="inline" id="six-months" value="six-months" name="subscription-type" type="radio"/>6 Months($49.99 <b>SAVE $10.00!!!</b>)</label>
+      <label for="yearly"><input class="inline" id="yearly" value="yearly" name="subscription-type" type="radio" />1 Year($79.99 <b>SAVE $20.00!!!)</b></label>
+      <p>*7 Days Free $9.99 per Month After (Cancel Anytime)</p>
+    </fieldset>
+    <fieldset>
+      <legend>Please Read and Accept The Terms and Conditions</legend>
+      <label for="terms"><input class="inline" id="terms" value="terms" name="checkbox-type" type="checkbox" required />I Accept The <a href="https://www.github.com/djangostar">Terms and Conditions</a>(Required)</label>
+      <label for="promotional"><input class="inline" id="promotional" value="promotional" name="checkbox-type" type="checkbox"/>Sign Up For Newsletter(Optional)
+    </fieldset>
+    </br>
+    <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+ 
