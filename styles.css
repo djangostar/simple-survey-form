@@ -1,19 +1,31 @@
+/* start with the body giving it a full with and height
+   set the margin to zero as no separation wanted
+   give it some simple aesthetics */
 body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #ffd700;
+  background-color: orange;
   font-family: Courier;
   font-size: 15px;
 }
 
+/* Target the title to make the font stand out */
+#title {
+  font-size: 50px;
+  margin: 0;
+}
+
+/* give h1 and p elements a margine relative tothe body and center its text */
 h1,
-h3,
 p {
   margin: 1.1em auto;
   text-align: center;
 }
 
+/* We want this p element to have completely different characteristics as it servers as a disclaimer */
+/* Give it no margin at the bottom to reduce separation of next fieldset */
+/* give it a rounded boder to hightligth disclaimer */
 p:last-child {
   border: dotted;
   border-radius: 25px;
@@ -23,30 +35,39 @@ p:last-child {
   font-size: 12px;
 }
 
+/* the the width of the form lower than the body to give it aesthetic separation with a min and max width provided */
 form {
   margin: 0 auto;
   width: 80vw;
   max-width: 600px;
   min-width: 400px;
+  background-color: #ffd700;
 }
 
+/* Give the fieldset an ouset border to flourish it, adjusting padding and margin as it made the most sense */
 fieldset {
   border: outset;
   border-color: orange;
+  background-color: #f0e68c;
   padding: 1rem;
+  margin: 1em 1em;
 }
 
+/* Give legend titles their own style and margin */
 legend {
   margin: 0em auto;
   font-size: 17px;
   text-align: center;
+  font-weight: bold;
 }
 
+/* set display and margin according to the latter elements in order to make it flow */
 label {
   display: block;
   margin: 0.4em 0;
 }
 
+/* Give all inuts the right dimension and styling for it to fit within previous paramaters set */
 input,
 textarea,
 select {
@@ -58,22 +79,24 @@ select {
   background-color: #f0e68c;
   min-height: 2em;
 }
-
+/* let's change the color of the placeholder in the input fields */
 ::placeholder {
   color: #daa520;
 }
 
+/* align checkbox and radio inputs to fit within the form aligning them with the text */
 .inline {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
 }
 
+/* Stylize the Submit button at ones whim */
 input[type='submit'] {
   display: block;
   width: 60%;
-  margin: 1em auto;
   height: 2em;
+  margin: 1em auto;
   font-size: 1.1rem;
   background-color: #ffa500;
   border-color: #ff4500;
