@@ -79,6 +79,12 @@ select {
   background-color: #f0e68c;
   min-height: 2em;
 }
+
+/* Fit the label by decreasing min-height in order to fit the input */
+input[type='file'] {
+  min-height: 1em;
+}
+
 /* let's change the color of the placeholder in the input fields */
 ::placeholder {
   color: #daa520;
